@@ -1,0 +1,79 @@
+@import "variables";
+@font-face {
+    font-family: "fm-m";
+    src: url("/fonts/Gotham-Medium.woff2") format("woff2"), url("/fonts/Gotham-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "fm-r";
+    src: url("/fonts/SVN-Gotham.woff2") format("woff2"), url("/fonts/SVN-Gotham.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "fm-b";
+    src: url("/fonts/SVN-GothamBold.woff2") format("woff2"), url("/fonts/SVN-GothamBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+.hidedn {
+    display: none;
+}
+.container-fluid {
+    width: 100%;
+    max-width: 2500px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    @media (max-width: $md-max) {
+        max-width: 1230px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+.container {
+    width: 100%;
+    padding-right: var(--gap);
+    padding-left: var(--gap);
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 9;
+}
+.txMain {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: fm-m;
+    &.large {
+        font-size: 36px;
+    }
+    &.bold {
+        font-weight: 700;
+    }
+    &.thin {
+        font-weight: 400;
+    }
+    &.normal {
+        font-weight: 400;
+    }
+    &.upc {
+        text-transform: uppercase;
+    }
+    &.purple {
+        color: $purple-cl-tx;
+    }
+}
