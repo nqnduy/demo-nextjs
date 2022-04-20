@@ -7,25 +7,25 @@ function HeroSection() {
                 <div className="banner">
                     <div className="banner-title">
                         <div style={{ marginBottom: 30 }}>
-                            <Image src="/phongtra1.png" alt="" width={229} height={28.5} layout="intrinsic" />
+                            <Image src="/images/phongtra1.png" alt="" width={229} height={28.5} layout="intrinsic" />
                         </div>
                         <div style={{ marginBottom: 50 }}>
-                            <Image src="/title-banner.png" alt="" width={609} height={321} layout="intrinsic" />
+                            <Image src="/images/title-banner.png" alt="" width={609} height={321} layout="intrinsic" />
                         </div>
                         <div style={{ display: "flex", alignItems: "center", gap: 40 }}>
                             <div>
-                                <Image src="/time.png" alt="" width={137} height={47} layout="intrinsic" />
+                                <Image src="/images/time.png" alt="" width={137} height={47} layout="intrinsic" />
                             </div>
                             <div>
-                                <Image src="/location.png" alt="" width={185} height={55} layout="intrinsic" />
+                                <Image src="/images/location.png" alt="" width={185} height={55} layout="intrinsic" />
                             </div>
                         </div>
                     </div>
                     <div style={{ marginTop: "17vh", width: "35%" }}>
-                        <Image src="/pmc.png" alt="" width={186} height={116.28} layout="intrinsic" />
+                        <Image src="/images/pmc.png" alt="" width={186} height={116.28} layout="intrinsic" />
                     </div>
                     <div style={{ marginTop: "36vh" }}>
-                        <Image src="/erik-name.png" alt="" width={96} height={60} layout="intrinsic" />
+                        <Image src="/images/erik-name.png" alt="" width={96} height={60} layout="intrinsic" />
                     </div>
                 </div>
             </div>
@@ -35,10 +35,11 @@ function HeroSection() {
                     width: 100%;
                     padding-top: 50px;
                     width: 100%;
+                    z-index: 9;
                     .banner {
                         width: 100%;
                         height: 80vh;
-                        background: url(/bg-banner.png) no-repeat center center/cover;
+                        background: url(/images/bg-banner.png) no-repeat center center/cover;
                         position: relative;
                         display: flex;
                         &-title {

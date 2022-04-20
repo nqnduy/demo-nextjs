@@ -1,6 +1,13 @@
 import Head from 'next/head';
-import Header from '../components/Header';
+import Aboutus from '../components/Aboutus';
+import FAQ from '../components/FAQ';
 import HeroSection from "../components/HeroSection";
+import MainLayout from '../components/MainLayout/index';
+import Organizational from '../components/Organizational';
+import OurTeam from '../components/OurTeam';
+import Upcoming from '../components/UpComing';
+import WatchIt from '../components/WatchIt';
+import WhatNew from '../components/WhatNew/index';
 export default function Home() {
   return (
       <div>
@@ -10,12 +17,30 @@ export default function Home() {
               <link rel="icon" href="/favicon.ico" />
           </Head>
 
-          <main>
-              <Header />
-              <HeroSection />
-          </main>
+              <MainLayout>
+                  <HeroSection />
+                  <Upcoming isList="true" />
+                  <WatchIt />
+                  <FAQ />
+                  <Organizational />
+                  <Aboutus />
+                  <OurTeam />
+                  <WhatNew />
+              </MainLayout>
+          <style jsx global>{`
+              main {
+                  .Upcoming,
+                  .FAQ {
+                      margin-bottom: 50px;
+                  }
+                  .PreviousShow,
+                  .AboutUs,
+                  .OurTeam {
+                      margin-bottom: 100px;
+                  }
+              }
+          `}</style>
 
-          <footer></footer>
       </div>
   );
 }
