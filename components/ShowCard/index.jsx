@@ -21,6 +21,7 @@ function ShowCard({ time, location, image, price, title, ticket }) {
             </div>
             <style jsx>{`
                 .showCard {
+                    cursor: pointer;
                     &__bottom {
                         color: "#fff";
                         padding: 20px;

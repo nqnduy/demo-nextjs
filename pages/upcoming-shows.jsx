@@ -14,7 +14,11 @@ function AboutUs() {
                 <HeroSection />
                 <Upcoming isList={false} />
             </MainLayout>
-            <style jsx global>{``}</style>
+            <style jsx global>{`
+                .Upcoming {
+                    margin-bottom: 50px;
+                }
+            `}</style>
         </div>
     );
 }

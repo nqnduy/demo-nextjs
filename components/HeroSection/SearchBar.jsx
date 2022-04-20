@@ -43,6 +43,7 @@ function SearchBar() {
                         display: flex;
                         align-items: center;
                         gap: 150px;
+                        cursor: pointer;
                         &__item {
                             color: #b8b7d0;
                             p {

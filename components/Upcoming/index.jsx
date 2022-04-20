@@ -12,6 +12,7 @@ function Upcoming({ isList }) {
             </div>
             <style jsx>{`
                 .Upcoming {
+                    position: relative;
                     padding-top: 100px;
                 }
                 .container-fluid {

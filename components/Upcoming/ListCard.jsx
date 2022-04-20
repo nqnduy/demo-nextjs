@@ -17,7 +17,7 @@ function ListCard() {
     };
     return (
         <div className="PLMain">
-            <Slider>
+            <Slider {...settings}>
                 <ShowCard
                     image="/images/card1.png"
                     time="Feb 27, 2022"
@@ -36,8 +36,14 @@ function ListCard() {
                 <ShowCard image="/images/card4.png" time="Mar 10, 2022" location="Ho Chi Minh City" title="Tokyo Digital Conference ShakeUp" ticket="25" />
             </Slider>
             <style jsx global>{`
+                .slick-arrow {
+                    top: -70px;
+                }
                 .slick-list {
                     padding: 0 !important;
+                }
+                .showCard {
+                    margin-right: 26px;
                 }
             `}</style>
         </div>
