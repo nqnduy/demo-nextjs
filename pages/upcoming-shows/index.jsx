@@ -1,8 +1,8 @@
 import Head from "next/head";
-import HeroSection from "../components/HeroSection/index";
-import MainLayout from "../components/MainLayout";
-import Upcoming from "../components/UpComing";
-function AboutUs() {
+import HeroSection from "../../components/HeroSection";
+import MainLayout from "../../components/MainLayout";
+import Upcoming from "../../components/UpComing";
+export default function UpComingShows() {
     return (
         <div>
             <Head>
@@ -11,7 +11,7 @@ function AboutUs() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <MainLayout>
-                <HeroSection />
+                <HeroSection searchBar={true} />
                 <Upcoming isList={false} />
             </MainLayout>
             <style jsx global>{`
@@ -22,5 +22,3 @@ function AboutUs() {
         </div>
     );
 }
-
-export default AboutUs;

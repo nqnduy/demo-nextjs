@@ -13,7 +13,7 @@ export default function OurClient() {
 with us have referred
 their friends to us"
                     />
-                    <p className="txMain bold hoverPink hoverPink-small">View More</p>
+                    <p className="txMain bold hoverText hoverText-pink hoverText-small">View More</p>
                 </div>
                 <div className="w50">
                     <p className="OurClient__description txMain purple normal w70">

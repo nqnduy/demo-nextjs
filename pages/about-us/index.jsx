@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Aboutus from "../components/Aboutus";
-import FAQ from "../components/FAQ/index";
-import MainLayout from "../components/MainLayout";
-import Organizational from "../components/Organizational/index";
-import OurClient from "../components/OurClient";
-import OurTeam from "../components/OurTeam/TypeCenter";
+import Aboutus from "../../components/Aboutus";
+import FAQ from "../../components/FAQ/index";
+import MainLayout from "../../components/MainLayout";
+import Organizational from "../../components/Organizational/index";
+import OurClient from "../../components/OurClient";
+import OurTeam from "../../components/OurTeam/TypeCenter";
 function AboutUs() {
     return (
         <div>

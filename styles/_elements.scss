@@ -79,6 +79,9 @@
     &.blue {
         color: $blue-cl-tx;
     }
+    &.main {
+        color: $main-cl-tx;
+    }
 }
 .flex {
     display: flex;
@@ -117,7 +120,7 @@
         }
     }
 }
-.hoverPink {
+.hoverText {
     width: fit-content;
     position: relative;
     padding-bottom: 7px;
@@ -138,11 +141,25 @@
             height: 1px;
         }
     }
+    &-pink {
+        &:hover {
+            color: $pink-cl-tx;
+            &:after {
+                background-color: $pink-cl-tx;
+            }
+        }
+    }
+    &-blue {
+        &:hover {
+            color: $blue-cl-tx;
+            &:after {
+                background-color: $blue-cl-tx;
+            }
+        }
+    }
     &:hover {
-        color: #e71882;
         &:after {
             width: 100%;
-            background-color: #e71882;
             transition: 0.3s ease-out;
         }
     }
@@ -189,14 +206,23 @@
         left: initial;
     }
 }
+.w20 {
+    width: 20%;
+}
 .w30 {
     width: 30%;
 }
 .w40 {
     width: 40%;
 }
+.w45 {
+    width: 45%;
+}
 .w50 {
     width: 50%;
+}
+.w55 {
+    width: 55%;
 }
 .w60 {
     width: 60%;

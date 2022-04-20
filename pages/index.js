@@ -18,7 +18,7 @@ export default function Home() {
           </Head>
 
               <MainLayout>
-                  <HeroSection />
+              <HeroSection searchBar={true}/>
                   <Upcoming isList="true" />
                   <WatchIt />
                   <FAQ />

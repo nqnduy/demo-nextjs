@@ -35,11 +35,7 @@ function GridCard() {
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
                         gap: 26px;
-                        position: relative;
                         .SortUpcomingShow {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
                         }
                     }
                 `}</style>

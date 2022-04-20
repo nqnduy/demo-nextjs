@@ -26,7 +26,7 @@ function Aboutus() {
                             <div className="txMain normal purple upc lspacing-1 thin">Tickets Sold</div>
                         </div>
                     </div>
-                    <p className="txMain bold hoverPink hoverPink-small">View more</p>
+                    <p className="txMain bold hoverText hoverText-pink hoverText-small">View more</p>
                 </div>
                 <div className="flex" style={{ gap: 30 }}>
                     <div className="flex" style={{ flexDirection: "column", alignItems: "flex-end" }}>

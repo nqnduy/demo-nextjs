@@ -51,27 +51,27 @@ function Header() {
                     </div>
                     <ul className="menu">
                         <li>
-                            <a className="txMain bold hoverPink" href="">
+                            <a className="txMain bold hoverText hoverText-pink" href="">
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a className="txMain bold hoverPink" href="">
+                            <a className="txMain bold hoverText hoverText-pink" href="">
                                 Upcoming Shows
                             </a>
                         </li>
                         <li>
-                            <a className="txMain bold hoverPink" href="">
+                            <a className="txMain bold hoverText hoverText-pink" href="">
                                 Gallery
                             </a>
                         </li>
                         <li>
-                            <a className="txMain bold hoverPink" href="">
+                            <a className="txMain bold hoverText hoverText-pink" href="">
                                 News & Promotions
                             </a>
                         </li>
                         <li>
-                            <a className="txMain bold hoverPink" href="">
+                            <a className="txMain bold hoverText hoverText-pink" href="">
                                 Contact
                             </a>
                         </li>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SearchBar from "./SearchBar";
-function HeroSection() {
+function HeroSection({ searchBar }) {
     return (
         <>
             <div className="HeroSection">
@@ -29,7 +29,7 @@ function HeroSection() {
                     </div>
                 </div>
             </div>
-            <SearchBar />
+            {searchBar && <SearchBar />}
             <style jsx>{`
                 .HeroSection {
                     width: 100%;

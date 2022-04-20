@@ -10,13 +10,13 @@ function FAQ() {
                     <p className="txMain purple normal" style={{ marginBottom: 40, width: "75%" }}>
                         When an unknown printer took a galley of type & scrambled it to make a type specimen book. It has survived not only five centuries.
                     </p>
-                    <p className="txMain bold headline hoverPink">Frequently asked questions</p>
-                    <p className="txMain bold headline hoverPink">Payment and returns</p>
-                    <p className="txMain bold headline hoverPink">Managing your account</p>
+                    <p className="txMain bold headline hoverText hoverText-pink">Frequently asked questions</p>
+                    <p className="txMain bold headline hoverText hoverText-pink">Payment and returns</p>
+                    <p className="txMain bold headline hoverText hoverText-pink">Managing your account</p>
                     <p className="txMain normal purple" style={{ marginBottom: 10 }}>
                         Still have any questions for your problem?{" "}
                     </p>
-                    <p className="txMain bold hoverPink hoverPink-small">Request Now!</p>
+                    <p className="txMain bold hoverText hoverText-pink hoverText-small">Request Now!</p>
                 </div>
                 <div style={{ width: "57%" }}>
                     <AccordionList />

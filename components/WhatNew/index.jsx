@@ -81,7 +81,7 @@ function WhatNew() {
                     </div>
                 </div>
                 <div className="flexCT" style={{ marginTop: 40 }}>
-                    <p className="txMain pink bold hoverPink hoverPink-small">View More</p>
+                    <p className="txMain pink bold hoverText hoverText-pink hoverText-small">View More</p>
                 </div>
                 <style jsx>{`
                     .flexCOL {
