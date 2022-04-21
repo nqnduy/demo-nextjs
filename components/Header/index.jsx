@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import SocialGroup from "./SocialGroup";
 function Header() {
     const [fixed, setFixed] = useState(false);
     useEffect(() => {
@@ -23,17 +24,7 @@ function Header() {
                         Have any Questions? Call Us <strong>028 6673 8686</strong>
                     </div>
                     <div className="HeaderCTA-button">
-                        <div>
-                            <div className="HeaderCTA-button__item facebook">
-                                <Image src="/images/icons/facebook.svg" alt="Facebook" width={10} height={18} />
-                            </div>
-                            <div className="HeaderCTA-button__item tiktok">
-                                <Image src="/images/icons/tiktok.svg" alt="Tiktok" width={15} height={18} />
-                            </div>
-                            <div className="HeaderCTA-button__item youtube">
-                                <Image src="/images/icons/youtube.svg" alt="Youtube" width={20} height={14} />
-                            </div>
-                        </div>
+                        <SocialGroup />
                         <div className="language">
                             <div className="language-current">
                                 English
@@ -125,11 +116,6 @@ function Header() {
                             display: flex;
                             align-items: center;
                             gap: 40px;
-                            & > div {
-                                display: flex;
-                                align-items: center;
-                                gap: 25px;
-                            }
                             .language {
                                 position: relative;
                                 height: 100%;

@@ -3,7 +3,7 @@ function TextTitle({ small_text, big_text }) {
         <>
             <div className="TextTitle">
                 <h3 className="txMain blue normal upc lspacing-1">{small_text}</h3>
-                <h4 className="txMain large bold">{big_text}</h4>
+                <h4 className="txMain fz-36 bold">{big_text}</h4>
             </div>
             <style jsx>{`
                 h3 {

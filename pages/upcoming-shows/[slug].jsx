@@ -19,6 +19,7 @@ export default function UpComingShowDetail() {
             <style jsx global>{`
                 .UpComingShowDetail {
                     margin-top: 100px;
+                    margin-bottom: 50px;
                 }
             `}</style>
         </>

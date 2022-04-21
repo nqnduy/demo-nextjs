@@ -8,7 +8,7 @@ function Accordion({ title, content }) {
             <div className={`Accordion flexSB ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
                 <div>
                     <div className="txMain title">{title}</div>
-                    <div className="txMain purple normal content">{content}</div>
+                    <div className="txMain purple normal fz-16 content">{content}</div>
                 </div>
                 <div>
                     <div className="icon">
@@ -28,7 +28,7 @@ function Accordion({ title, content }) {
                         color: #b8b7d0;
                         cursor: pointer;
                     }
-                    .content {
+                    .fz-16 {
                         margin-top: 13px;
                         opacity: 0;
                         max-height: 0;

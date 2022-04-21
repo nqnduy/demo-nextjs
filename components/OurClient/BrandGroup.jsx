@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BrandGroup() {
+export default function BrandGroup({ column = 3 }) {
     return (
         <div className="BrandGroup">
             <div>
@@ -30,7 +30,7 @@ export default function BrandGroup() {
             <style jsx>{`
                 .BrandGroup {
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(${column}, 1fr);
                     row-gap: 55px;
                 }
             `}</style>

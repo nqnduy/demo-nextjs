@@ -7,10 +7,10 @@ function Footer() {
                 <div className="container-fluid">
                     <div className="backBannerFooter">
                         <div style={{ width: "53%" }}>
-                            <p className="txMain bold large" style={{ marginBottom: 6 }}>
+                            <p className="txMain bold fz-36" style={{ marginBottom: 6 }}>
                                 Sign up to our newsletter
                             </p>
-                            <p className="txMain normal content">Don’t miss our future updates!</p>
+                            <p className="txMain normal fz-16">Don’t miss our future updates!</p>
                         </div>
                         <div style={{ width: "48%" }}>
                             <Input />
@@ -21,19 +21,19 @@ function Footer() {
                             <Image src="/images/icons/logo.svg" alt="Logo" width={107} height={40} />
                         </div>
                         <ul className="menu flex" style={{ gap: 40 }}>
-                            <li className="txMain normal content">
+                            <li className="txMain normal fz-16">
                                 <a href="">About Us</a>
                             </li>
-                            <li className="txMain normal content">
+                            <li className="txMain normal fz-16">
                                 <a href="">Upcoming Shows</a>
                             </li>
-                            <li className="txMain normal content">
+                            <li className="txMain normal fz-16">
                                 <a href="">Gallery</a>
                             </li>
-                            <li className="txMain normal content">
+                            <li className="txMain normal fz-16">
                                 <a href="">News & Promotions</a>
                             </li>
-                            <li className="txMain normal content">
+                            <li className="txMain normal fz-16">
                                 <a href="">Contact</a>
                             </li>
                         </ul>

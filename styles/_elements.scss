@@ -34,13 +34,19 @@
     font-weight: 500;
     line-height: 26px;
     font-family: fm-m;
-    &.large {
+    &.fz-36 {
         font-size: 36px;
         line-height: 46px;
     }
-    &.content {
+    &.fz-21 {
+        font-size: 21px;
+    }
+    &.fz-16 {
         font-size: 16px;
         line-height: 26px;
+    }
+    &.fz-12 {
+        font-size: 12px;
     }
     &.bold {
         font-weight: fm-b;
@@ -54,9 +60,7 @@
         font-family: fm-t;
         font-weight: 300;
     }
-    &.small {
-        font-size: 12px;
-    }
+
     &.lspacing-1 {
         letter-spacing: 0.1em;
     }
@@ -75,12 +79,15 @@
     }
     &.pink {
         color: $pink-cl-tx;
+        cursor: pointer;
     }
     &.blue {
         color: $blue-cl-tx;
+        cursor: pointer;
     }
     &.main {
         color: $main-cl-tx;
+        cursor: pointer;
     }
 }
 .flex {
@@ -238,4 +245,10 @@
 }
 .w100 {
     width: 100%;
+}
+.list-style-auto {
+    list-style-type: initial;
+}
+.cur-pointer {
+    cursor: pointer;
 }

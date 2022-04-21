@@ -9,7 +9,7 @@ function ShowCard({ time, location, image, price, title, ticket }) {
                     <ImageWrap src={image} gif="/images/gif/343x270.gif" />
                 </div>
                 <div className="showCard__bottom">
-                    <div className="txMain small purple upc normal" style={{ marginBottom: 8 }}>
+                    <div className="txMain fz-12 purple upc normal" style={{ marginBottom: 8 }}>
                         {`${time} • ${location}`}
                     </div>
                     <div className="txMain overText2 showCard__title">{title}</div>
