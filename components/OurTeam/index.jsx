@@ -1,6 +1,6 @@
+import MemberCard from "../Card/MemberCard";
 import NextPrev from "../NextPrev/index";
 import TextTitle from "../TextTitle/index";
-import MemberCard from "./MemberCard";
 export default function OurTeam({ type }) {
     return (
         <>

@@ -1,5 +1,5 @@
 import React from "react";
-import ShowCard from "../ShowCard";
+import ShowCard from "../Card/ShowCard";
 import Sort from "./Sort";
 function GridCard() {
     return (

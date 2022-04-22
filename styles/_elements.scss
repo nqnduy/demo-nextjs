@@ -89,6 +89,9 @@
         color: $main-cl-tx;
         cursor: pointer;
     }
+    &.textALC {
+        text-align: center;
+    }
 }
 .flex {
     display: flex;
@@ -173,10 +176,10 @@
 }
 
 .slick-arrow {
-    cursor: pointer;
     top: -90px;
     &.slick-next,
     &.slick-prev {
+        cursor: pointer;
         width: 40px;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 50%;

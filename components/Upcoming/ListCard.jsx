@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import ArrowNext from "../ArrowNext";
 import ArrowPrev from "../ArrowPrev";
-import ShowCard from "../ShowCard";
+import ShowCard from "../Card/ShowCard";
 
 function ListCard() {
     const settings = {

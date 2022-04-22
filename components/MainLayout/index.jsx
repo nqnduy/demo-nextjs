@@ -5,7 +5,7 @@ function MainLayout({ children, headTitle }) {
     return (
         <div className="mainBody">
             <Header />
-            <main style={{ backgroundColor: "#060070" }}>{children}</main>
+            <main style={{ backgroundColor: "#05005E" }}>{children}</main>
             <Footer />
             <style jsx global>{`
                 .mainBody {

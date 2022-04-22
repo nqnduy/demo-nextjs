@@ -1,8 +1,8 @@
 import Slider from "react-slick";
 import ArrowNext from "../ArrowNext";
 import ArrowPrev from "../ArrowPrev";
+import MemberCard from "../Card/MemberCard";
 import TextTitle from "../TextTitle/index";
-import MemberCard from "./MemberCard";
 export default function TypeCenter() {
     // const next = () => {
     //     slider.slickNext();
@@ -15,7 +15,7 @@ export default function TypeCenter() {
         centerMode: true,
         centerPadding: "100px",
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         // pauseOnHover: true,

@@ -1,12 +1,13 @@
 import React from "react";
 
-export default function ImageWrap({ src, gif, bora, ...props }) {
+export default function ImageWrap({ src, gif, bora = 0, ...props }) {
     return (
         <>
             <style jsx global>{`
                 .ImageWrap {
                     position: relative;
                     overflow: hidden;
+                    border-radius: ${bora}px;
                     div {
                         width: 100%;
                         height: 100%;
@@ -19,13 +20,10 @@ export default function ImageWrap({ src, gif, bora, ...props }) {
                     img {
                         width: 100%;
                     }
-                    &.bora15 {
-                        border-radius: 15px;
-                    }
                 }
             `}</style>
 
-            <div className={`ImageWrap ${bora}`}>
+            <div className="ImageWrap">
                 <div style={{ background: `url(${src}) no-repeat center` }}></div>
                 <img src={gif} {...props} />
             </div>

@@ -16,6 +16,7 @@ function PreviousShowCard({ image, title, event, children }) {
                     </div>
                 </div>
             </div>
+
             <style jsx>{`
                 .PreviousShowCard {
                     margin-right: 26px;

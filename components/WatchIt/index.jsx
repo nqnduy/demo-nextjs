@@ -1,6 +1,6 @@
 import NextPrev from "../NextPrev";
-import TextTitle from "../TextTitle";
 import PreviousShowList from "./PreviousShowList";
+import TextTitle from "../TextTitle";
 
 function WatchIt() {
     return (

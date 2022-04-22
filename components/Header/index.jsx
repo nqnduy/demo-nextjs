@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import SocialGroup from "./SocialGroup";
 function Header() {
@@ -42,19 +43,25 @@ function Header() {
                     </div>
                     <ul className="menu">
                         <li>
-                            <a className="txMain bold hoverText hoverText-pink" href="">
-                                About Us
-                            </a>
+                            <Link href="/about-us">
+                                <a className="txMain bold hoverText hoverText-pink" href="">
+                                    About Us
+                                </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="txMain bold hoverText hoverText-pink" href="">
-                                Upcoming Shows
-                            </a>
+                            <Link href="/upcoming-shows">
+                                <a className="txMain bold hoverText hoverText-pink" href="">
+                                    Upcoming Shows
+                                </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="txMain bold hoverText hoverText-pink" href="">
-                                Gallery
-                            </a>
+                            <Link href="/gallery">
+                                <a className="txMain bold hoverText hoverText-pink" href="">
+                                    Gallery
+                                </a>
+                            </Link>
                         </li>
                         <li>
                             <a className="txMain bold hoverText hoverText-pink" href="">

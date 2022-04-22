@@ -1,5 +1,5 @@
+import NewCard from "../Card/NewsCard";
 import TextTitle from "../TextTitle/index";
-import NewCard from "./NewCard";
 function WhatNew() {
     return (
         <>

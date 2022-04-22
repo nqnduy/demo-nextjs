@@ -3,7 +3,7 @@ import Input from "./Input";
 function Footer() {
     return (
         <>
-            <footer className="Footer" style={{ backgroundColor: "#060070" }}>
+            <footer className="Footer" style={{ backgroundColor: "#05005E" }}>
                 <div className="container-fluid">
                     <div className="backBannerFooter">
                         <div style={{ width: "53%" }}>
