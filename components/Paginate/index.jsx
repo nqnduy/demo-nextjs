@@ -1,0 +1,96 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React from "react";
+import { changeQueryURL } from "../../core/ultis/url";
+import ArrowNext from "../ArrowNext";
+import ArrowPrev from "../ArrowPrev/index";
+export default function Paginate({ totalPage }) {
+    const router = useRouter();
+    const { query } = router;
+    const currentPage = parseInt(query.page || "1");
+    const renderPage = () => {
+        if (totalPage <= 1) return;
+
+        let start = currentPage - 2;
+        let end = currentPage + 2;
+        if (start < 1) {
+            start = 1;
+            end = 5;
+        }
+        if (end > totalPage) {
+            end = totalPage;
+            start = totalPage - 4;
+            if (start < 1) start = 1;
+        }
+        let list = [];
+        for (let i = start; i <= end; i++) {
+            list.push(
+                <>
+                    <li className={`page-item flexCT ${currentPage === i ? "active" : ""}`}>
+                        <Link href={changeQueryURL({ ...query, page: i })} scroll={false}>
+                            <a className="page-link txMain bold fz-16">{i < 10 ? `0${i}` : i}</a>
+                        </Link>
+                    </li>
+                    <style jsx>{`
+                        .page {
+                            gap: 10px;
+                            &-item {
+                                cursor: pointer;
+                                width: 40px;
+                                height: 40px;
+                                a {
+                                    color: #b8b7d0;
+                                    transition: 0.3 ease-in;
+                                }
+                                &:hover {
+                                    a {
+                                        transition: 0.3 ease-in;
+                                        color: #e71882;
+                                    }
+                                }
+                                &.active,
+                                &:active {
+                                    a {
+                                        transition: 0.3 ease-in;
+                                        color: #e71882;
+                                    }
+                                }
+                            }
+                        }
+                    `}</style>
+                </>
+            );
+        }
+        return list;
+    };
+    return (
+        <>
+            <style jsx>{`
+                .page {
+                    gap: 10px;
+                }
+            `}</style>
+            <div className="pagination">
+                <ul className="page flexAC">
+                    {currentPage > 1 && (
+                        // eslint-disable-next-line @next/next/link-passhref
+                        <Link href={changeQueryURL({ ...query, page: currentPage - 1 })} scroll={false}>
+                            <div>
+                                <ArrowPrev.Paging />
+                            </div>
+                        </Link>
+                    )}
+                    {renderPage()}
+                    {currentPage < totalPage && (
+                        // eslint-disable-next-line @next/next/link-passhref
+                        <Link href={changeQueryURL({ ...query, page: currentPage + 1 })} scroll={false}>
+                            <div>
+                                <ArrowNext.Paging />
+                            </div>
+                        </Link>
+                    )}
+                </ul>
+            </div>
+        </>
+    );
+}

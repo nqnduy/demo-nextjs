@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function ImageWrap({ src, gif, bora = 0, ...props }) {
+export default function ImageWrap({ src, gif, bora = "0px", ...props }) {
     return (
         <>
-            <style jsx global>{`
+            <style jsx>{`
                 .ImageWrap {
                     position: relative;
                     overflow: hidden;
-                    border-radius: ${bora}px;
+                    border-radius: ${bora};
                     div {
                         width: 100%;
                         height: 100%;

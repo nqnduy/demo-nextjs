@@ -28,7 +28,6 @@ export default function Home() {
                   <WhatNew />
               </MainLayout>
           <style jsx global>{`
-              main {
                   .Upcoming,
                   .FAQ {
                       margin-bottom: 50px;
@@ -38,7 +37,6 @@ export default function Home() {
                   .OurTeam {
                       margin-bottom: 100px;
                   }
-              }
           `}</style>
 
       </div>

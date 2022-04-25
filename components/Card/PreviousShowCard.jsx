@@ -7,7 +7,7 @@ function PreviousShowCard({ image, title, event, children }) {
                         <img src={image} alt="" />
                     </div>
                     <div className="layer"></div>
-                    <div className="textWrap flexSB">
+                    <div className="textWrapLayer flexSB">
                         <div>
                             <p className="txMain">{title}</p>
                             <p className="txMain normal purple">{event} events</p>
@@ -37,23 +37,6 @@ function PreviousShowCard({ image, title, event, children }) {
                                 transform: translate(-50%, -50%);
                                 object-fit: cover;
                             }
-                        }
-                        .layer {
-                            position: absolute;
-                            bottom: 0;
-                            z-index: 2;
-                            left: 0;
-                            width: 100%;
-                            height: 30%;
-                            background: linear-gradient(180deg, rgba(17, 12, 99, 0) 0%, rgba(17, 12, 99, 0.5) 58.85%, rgba(17, 12, 99, 0.85) 100%);
-                        }
-                        .textWrap {
-                            position: absolute;
-                            z-index: 3;
-                            width: 100%;
-                            padding: 0 20px;
-                            color: #fff;
-                            bottom: 18px;
                         }
                     }
                 }

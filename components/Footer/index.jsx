@@ -3,7 +3,8 @@ import Input from "./Input";
 function Footer() {
     return (
         <>
-            <footer className="Footer" style={{ backgroundColor: "#05005E" }}>
+            <footer className="Footer" style={{ backgroundColor: "#060070" }}>
+                <div className="BGWrap"></div>
                 <div className="container-fluid">
                     <div className="backBannerFooter">
                         <div style={{ width: "53%" }}>
@@ -54,16 +55,25 @@ function Footer() {
                     </div>
                 </div>
             </footer>
-            <style jsx>{`
+            <style jsx global>{`
                 .backBannerFooter {
                     background: url(/images/footer.png) no-repeat center center/cover;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     padding: 68px 86px;
+                    border-radius: 25px;
                 }
                 .Footer {
                     padding-top: 30px;
+                    position: relative;
+                    .BGWrap {
+                        width: 100%;
+                        height: 70%;
+                        position: absolute;
+                        bottom: 0;
+                        background-color: #05005d;
+                    }
                     &__navigate {
                         margin-top: 45px;
                         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -87,6 +97,7 @@ function Footer() {
                     }
                     &__bottom {
                         padding-bottom: 30px;
+
                         .icon {
                             cursor: pointer;
                         }

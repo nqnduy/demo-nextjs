@@ -1,10 +1,14 @@
 import React from "react";
 import ShowCard from "../Card/ShowCard";
-import Sort from "./Sort";
+import SortDropdown from "../SortDropDown/index";
 function GridCard() {
     return (
         <>
-            <Sort />
+            <div className="SortUpcomingShow flexAC PRMain">
+                <p className="titleSort txMain purple normal">Sort by:</p>
+                <SortDropdown title="Relevance" />
+                <SortDropdown title="All categories" />
+            </div>
             <div className="GridCard container-fluid">
                 <ShowCard
                     image="/images/card1.png"
@@ -35,7 +39,17 @@ function GridCard() {
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
                         gap: 26px;
-                        .SortUpcomingShow {
+                        position: relative;
+                    }
+                    .SortUpcomingShow {
+                        position: absolute;
+                        top: 10%;
+                        right: 0;
+                        .titleSort {
+                            margin-right: 10px;
+                        }
+                        .typeSort:last-child {
+                            margin-right: 0;
                         }
                     }
                 `}</style>

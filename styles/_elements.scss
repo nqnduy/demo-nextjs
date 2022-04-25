@@ -41,6 +41,10 @@
     &.fz-21 {
         font-size: 21px;
     }
+    &.fz-18 {
+        font-size: 18px;
+        line-height: 26px;
+    }
     &.fz-16 {
         font-size: 16px;
         line-height: 26px;
@@ -254,4 +258,22 @@
 }
 .cur-pointer {
     cursor: pointer;
+}
+.layer {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(180deg, rgba(17, 12, 99, 0) 0%, rgba(17, 12, 99, 0.5) 58.85%, rgba(17, 12, 99, 0.85) 100%);
+    border-radius: 15px;
+}
+.textWrapLayer {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    padding: 0 20px;
+    color: #fff;
+    bottom: 18px;
 }

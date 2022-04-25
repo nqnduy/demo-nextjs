@@ -5,7 +5,7 @@ function NewsCard({ image, column, category, title, content, time }) {
         <>
             <div className={`NewsCard ${column}`}>
                 <div className="NewsCard__img">
-                    <ImageWrap src={image} gif="/images/gif/495x314.gif" bora={15} />
+                    <ImageWrap src={image} gif="/images/gif/495x314.gif" bora={"15px"} />
                 </div>
                 <div className="NewsCard__wrapText">
                     <pre className="flexAC timeLocation">
@@ -17,6 +17,7 @@ function NewsCard({ image, column, category, title, content, time }) {
             </div>
             <style jsx>{`
                 .NewsCard {
+                    cursor: pointer;
                     .timeLocation {
                         margin: 10px 0;
                     }

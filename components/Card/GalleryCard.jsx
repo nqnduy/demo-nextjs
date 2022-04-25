@@ -7,10 +7,10 @@ export default function GalleryCard({ image, title, time }) {
         <div className="GalleryCard">
             <div className="GalleryCard-content">
                 <div className="img">
-                    <ImageWrap src={image} gif="/images/gif/295x370.gif" bora={15} />
+                    <ImageWrap src={image} gif="/images/gif/295x370.gif" bora={"15px"} />
                 </div>
                 <div className="layer"></div>
-                <div className="textWrap flexSB">
+                <div className="textWrapLayer flexSB">
                     <div>
                         <p className="txMain fz-21">{title}</p>
                         <div className="flexAC" style={{ gap: 4 }}>
@@ -38,23 +38,6 @@ export default function GalleryCard({ image, title, time }) {
                                 transform: translate(-50%, -50%);
                                 object-fit: cover;
                             }
-                        }
-                        .layer {
-                            position: absolute;
-                            bottom: 0;
-                            z-index: 2;
-                            left: 0;
-                            width: 100%;
-                            height: 30%;
-                            background: linear-gradient(180deg, rgba(17, 12, 99, 0) 0%, rgba(17, 12, 99, 0.5) 58.85%, rgba(17, 12, 99, 0.85) 100%);
-                        }
-                        .textWrap {
-                            position: absolute;
-                            z-index: 3;
-                            width: 100%;
-                            padding: 0 20px;
-                            color: #fff;
-                            bottom: 18px;
                         }
                     }
                 }

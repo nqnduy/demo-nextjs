@@ -1,6 +1,6 @@
 import NewCard from "../Card/NewsCard";
 import TextTitle from "../TextTitle/index";
-function WhatNew() {
+function WhatNew({ hasViewMore = true }) {
     return (
         <>
             <div className="WhatNew">
@@ -80,9 +80,11 @@ function WhatNew() {
                         </div>
                     </div>
                 </div>
-                <div className="flexCT" style={{ marginTop: 40 }}>
-                    <p className="txMain pink bold hoverText hoverText-pink hoverText-small">View More</p>
-                </div>
+                {hasViewMore && (
+                    <div className="flexCT" style={{ marginTop: 40 }}>
+                        <p className="txMain pink bold hoverText hoverText-pink hoverText-small">View More</p>
+                    </div>
+                )}
                 <style jsx>{`
                     .flexCOL {
                         justify-content: space-between;
