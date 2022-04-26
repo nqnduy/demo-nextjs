@@ -1,29 +1,21 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
-import GalleryDetail from "../../components/GalleryDetail";
 import MainLayout from "../../components/MainLayout";
+import NewDetail from "../../components/WhatNew/NewDetail/index";
 export default function GalleryDetailPage() {
     const router = useRouter();
     return (
         <>
             <Head>
                 <title>{router.query.slug}</title>
-                <meta name="description" content="Gallery TOP Live Show" />
+                <meta name="description" content="News & Promotion TOP Live Show" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <MainLayout>
-                <GalleryDetail />
+                <NewDetail />
             </MainLayout>
-            <style jsx global>{`
-                .GalleryDetail {
-                    padding-top: 200px;
-                    padding-bottom: 70px;
-                }
-                .slick-list {
-                    padding: 0 !important;
-                }
-            `}</style>
+            <style jsx global>{``}</style>
         </>
     );
 }
