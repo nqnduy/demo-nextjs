@@ -2,7 +2,7 @@ import Head from "next/head";
 import HeroSection from "../../components/HeroSection";
 import MainLayout from "../../components/MainLayout";
 import Upcoming from "../../components/UpComing";
-export default function UpComingShows() {
+export default function UpComingShowsPage() {
     return (
         <div>
             <Head>

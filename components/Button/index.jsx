@@ -1,8 +1,8 @@
-function Button({ children, width, color }) {
+export default function Button({ children, width, color }) {
     return (
         <>
             <button className={`Button ${width} ${color}`}>
-                <p>{children}</p>
+                <div>{children}</div>
             </button>
             <style jsx>{`
                 .Button {
@@ -15,7 +15,7 @@ function Button({ children, width, color }) {
                     padding: 0;
                     margin: 0;
                     width: max-content;
-                    p {
+                    div {
                         background-color: #e71882;
                         font-size: 16px;
                         padding: 14px 28px 17px 28px;
@@ -24,6 +24,10 @@ function Button({ children, width, color }) {
                         color: #fff;
                         position: relative;
                         z-index: 3;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
                     }
                     &::before {
                         content: "";
@@ -40,9 +44,16 @@ function Button({ children, width, color }) {
                         width: 100%;
                     }
                     &.white {
-                        p {
+                        div {
                             background-color: #fff;
                             color: #060070;
+                        }
+                    }
+                    &.primary {
+                        border: 1px solid #fff;
+                        div {
+                            background-color: #060070;
+                            color: #fff;
                         }
                     }
                 }
@@ -50,5 +61,3 @@ function Button({ children, width, color }) {
         </>
     );
 }
-
-export default Button;

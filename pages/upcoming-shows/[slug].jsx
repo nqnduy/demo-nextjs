@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import HeroSection from "../../components/HeroSection";
 import MainLayout from "../../components/MainLayout";
 import DetailCard from "../../components/Upcoming/Detail";
-export default function UpComingShowDetail() {
+export default function UpComingShowDetailPage() {
     const router = useRouter();
     return (
         <>

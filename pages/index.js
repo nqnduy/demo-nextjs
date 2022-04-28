@@ -8,7 +8,7 @@ import OurTeam from '../components/OurTeam';
 import Upcoming from '../components/UpComing';
 import WatchIt from '../components/WatchIt';
 import WhatNew from '../components/WhatNew/index';
-export default function Home() {
+export default function HomePage() {
   return (
       <div>
           <Head>

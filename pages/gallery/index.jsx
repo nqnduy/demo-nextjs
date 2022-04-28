@@ -2,7 +2,7 @@ import Head from "next/head";
 import GalleryThumb from "../../components/GalleryThumb";
 import MainLayout from "../../components/MainLayout";
 import FeatureShowList from "../../components/WatchIt/FeatureShowList";
-export default function Gallery() {
+export default function GalleryPage() {
     return (
         <>
             <Head>

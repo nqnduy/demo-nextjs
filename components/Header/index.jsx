@@ -51,27 +51,23 @@ function Header() {
                         </li>
                         <li>
                             <Link href="/upcoming-shows">
-                                <a className="txMain bold hoverText hoverText-pink" href="">
-                                    Upcoming Shows
-                                </a>
+                                <a className="txMain bold hoverText hoverText-pink">Upcoming Shows</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/gallery">
-                                <a className="txMain bold hoverText hoverText-pink" href="">
-                                    Gallery
-                                </a>
+                                <a className="txMain bold hoverText hoverText-pink">Gallery</a>
                             </Link>
                         </li>
                         <li>
-                            <a className="txMain bold hoverText hoverText-pink" href="">
-                                News & Promotions
-                            </a>
+                            <Link href="/newspromotion">
+                                <a className="txMain bold hoverText hoverText-pink">News & Promotions</a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="txMain bold hoverText hoverText-pink" href="">
-                                Contact
-                            </a>
+                            <Link href="/contact">
+                                <a className="txMain bold hoverText hoverText-pink">Contact</a>
+                            </Link>
                         </li>
                     </ul>
                     <div className="action">

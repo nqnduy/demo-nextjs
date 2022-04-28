@@ -12,7 +12,7 @@ function ShowCard({ time, location, image, price, title, ticket }) {
                     <div className="txMain fz-12 purple upc normal" style={{ marginBottom: 8 }}>
                         {`${time} • ${location}`}
                     </div>
-                    <div className="txMain overText2 showCard__title">{title}</div>
+                    <div className="txMain fz-18 overText2 showCard__title">{title}</div>
                     <pre className="showCard__price txMain normal pink upc">
                         Start at <strong style={{ fontFamily: "fm-b" }}>{price}</strong> • <p className="txMain normal upc blue">{`${ticket} TICKETS LEFT`}</p>
                     </pre>
@@ -30,7 +30,6 @@ function ShowCard({ time, location, image, price, title, ticket }) {
                         background-color: rgba(255, 255, 255, 0.05);
                     }
                     &__title {
-                        font-size: 18px;
                         margin-bottom: 14px;
                         height: calc(2.5em + 5px);
                     }

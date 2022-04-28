@@ -5,7 +5,7 @@ import MainLayout from "../../components/MainLayout";
 import Organizational from "../../components/Organizational/index";
 import OurClient from "../../components/OurClient";
 import OurTeam from "../../components/OurTeam/TypeCenter";
-function AboutUs() {
+export default function AboutUsPage() {
     return (
         <div>
             <Head>
@@ -35,5 +35,3 @@ function AboutUs() {
         </div>
     );
 }
-
-export default AboutUs;

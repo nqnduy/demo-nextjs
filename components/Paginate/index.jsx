@@ -25,12 +25,12 @@ export default function Paginate({ totalPage }) {
         let list = [];
         for (let i = start; i <= end; i++) {
             list.push(
-                <>
-                    <li className={`page-item flexCT ${currentPage === i ? "active" : ""}`}>
-                        <Link href={changeQueryURL({ ...query, page: i })} scroll={false}>
+                <React.Fragment key={i}>
+                    <Link href={changeQueryURL({ ...query, page: i })} scroll={false} passHref replace>
+                        <li className={`page-item flexCT ${currentPage === i ? "active" : ""}`}>
                             <a className="page-link txMain bold fz-16">{i < 10 ? `0${i}` : i}</a>
-                        </Link>
-                    </li>
+                        </li>
+                    </Link>
                     <style jsx>{`
                         .page {
                             gap: 10px;
@@ -58,7 +58,7 @@ export default function Paginate({ totalPage }) {
                             }
                         }
                     `}</style>
-                </>
+                </React.Fragment>
             );
         }
         return list;
